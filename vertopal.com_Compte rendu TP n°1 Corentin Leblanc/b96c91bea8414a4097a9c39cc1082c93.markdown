@@ -12,46 +12,36 @@ terme grâce à la commande « **man which --k mot_cherché** ».
 4 -- Cette section parle de « Jeu » comme on peut le constater grâce à
 la capture d'écran ci-dessous.
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image1.png){width="6.3in"
-height="1.4951388888888888in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image1.png)
 
 **[Navigation dans l'arborescence des fichiers :]{.ul}**
 
 Ci-dessous on retrouvera les différentes étapes à réaliser dans le TP.
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image2.png){width="2.4690944881889765in"
-height="0.3854702537182852in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image2.png)
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image3.png){width="2.531603237095363in"
-height="0.3750524934383202in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image3.png)
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image4.png){width="2.9274923447069114in"
-height="0.34379811898512685in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image4.png)
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image5.png){width="2.906655730533683in"
-height="0.6667596237970254in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image5.png)
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image6.png){width="2.958746719160105in"
-height="0.3646347331583552in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image6.png)
 
 Nous n'avons pas la permissions d'accéder à ce dossier.
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image7.png){width="6.14669072615923in"
-height="0.8751224846894138in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image7.png)
 
 La commande « **sudo cd /root** » n'est pas reconnue. C'est une commande
 intégrée du shell, elle ne peut pas être directement exécutée. Rien ne
 peut être inscrit devant « **cd** ».
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image8.png){width="4.365192475940508in"
-height="1.885680227471566in"}
-
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image8.png)
 A partir du dossier personnel, j'ai donc créée l'arborescence demandée.
 Je me suis servis des commande « **mkdir nomdudossier** » pour les
 dossiers et « **touch nomdufichier** » pour les fichiers.
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image9.png){width="4.625645231846019in"
-height="0.39588910761154855in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image9.png)
 
 Je ne peux pas supprimer « **Fichier1** » car je ne suis pas dans le
 dossier qui contient ce fichier.
@@ -59,14 +49,12 @@ dossier qui contient ce fichier.
 La commande qui permet de supprimer un dossier se nomme « **rmdir
 nomdufichier** », il faut par contre que le dossier soit vide.
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image10.png){width="3.7192694663167103in"
-height="0.3646347331583552in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image10.png)
 
 Lorsque l'on applique cette commande à Dossier2, ce n'est pas possible
 car c'est un répertoire.
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image11.png){width="2.7295472440944883in"
-height="0.6875962379702537in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image11.png)
 
 Voici comment supprimer en une seule commande Dossier2 et son contenu.
 Le paramètre « **-R** » est ici pour supprimer les fichiers/dossiers
@@ -79,17 +67,14 @@ récursifs (qui se trouve à la suite du chemin).
     et le temps du système. Les deux dernières données peuvent être
     modifié alors que le temps réel ne peut être modifié.
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image12.png){width="2.6253663604549433in"
-height="1.1876662292213473in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image12.png)
 
-2.  ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image13.png){width="6.4591382327209095in"
-    height="0.4791666666666667in"}On peut donc en déduire que les
+2.  ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image13.png)On peut donc en déduire que les
     fichiers commençant par un point sont des fichiers cachés.
 
 3.  Le programme ls se situe dans « **/usr/bin/ls** ».
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image14.png){width="2.260731627296588in"
-height="0.3646347331583552in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image14.png)
 
 > 4 -- Voilà le résultat de la commande « **ll** ». Il n'existe pas
 > d'entrée de manuel pour cette commande. La commande « alias ll » m'a
@@ -97,37 +82,31 @@ height="0.3646347331583552in"}
 > c'est un dérivé de la commande « **ls** » mais avec des options
 > supplémentaires.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image15.png){width="5.5424398512685915in"
-> height="3.0108366141732286in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image15.png)
 >
 > 5 -- La commande qui permet d'afficher les fichiers contenus dans le
 > dossier **/bin** est « **ls /bin** ». Je peux faire cette commande
 > même sans être dans le répertoire **/bin** car elle est dans les
 > chemins de variables locales **\$PATH**.
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image16.png){width="6.3in"
-height="0.28680555555555554in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image16.png)
 
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image17.png){width="1.9690244969378827in"
-> height="0.34379811898512685in"}6 -- La commande « **ls ..** » permet
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image17.png)6 -- La commande « **ls ..** » permet
 > de visualiser ce qui se trouve dans le dossier qui se trouve un cran
 > en arrière (si /home/usr alors /home).
 >
 > 7 -- La commande qui donne le chemin complet du dossier courant est
 > « **pwd** » (Path Work Directory).
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image18.png){width="1.8335892388451445in"
-> height="0.3646347331583552in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image18.png)
 >
 > 8 -- La commande « **echo 'bip' \> plop** » exécutée deux fois va
 > écrire bip une première fois dans un fichier nommé « **plop** » puis
 > va écraser le dernier bip et en écrire un deuxième.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image19.png){width="2.979582239720035in"
-> height="1.6773173665791776in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image19.png)
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image20.png){width="3.052509842519685in"
-> height="1.8648436132983377in"}9 -- La commande « **echo 'bip' \>\>
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image20.png)9 -- La commande « **echo 'bip' \>\>
 > plop** » exécutée deux fois va cette fois ci écrire un deuxième bip à
 > la suite du premier du fait de l'apparition d'un deuxième chevron.
 >
@@ -135,11 +114,9 @@ height="0.28680555555555554in"}
 > premier temps le toto puis ensuite attend 10 secondes avant de nous
 > rendre la main.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image21.png){width="3.3754713473315836in"
-> height="0.552159886264217in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image21.png)
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image22.png){width="4.927771216097987in"
-> height="1.0313943569553805in"}11 -- La commande file sert à déterminer
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image22.png)11 -- La commande file sert à déterminer
 > le type d'un fichier.
 >
 > 12 -- On constate que si l'on modifie le contenue du fichier
@@ -147,34 +124,29 @@ height="0.28680555555555554in"}
 > changer. Le fichier **lien_phy** existe toujours même si on supprime
 > le fichier **original**.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image23.png){width="4.031812117235345in"
-> height="1.718989501312336in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image23.png)
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image24.png){width="2.917073490813648in"
-> height="1.0730664916885388in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image24.png)
 >
 > 13 -- Après modification du contenu du fichier **lien_phy**, la
 > modification se fait également sur le fichier **lien_sym**. Après
 > suppression du fichier **lien_phy**, le fichier **lien_sym** n'est
 > plus accessible comme en témoigne la capture d'écran ci-dessous.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image25.png){width="2.7909722222222224in"
-> height="2.4178062117235344in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image25.png)
 >
 > 14 -- Les raccourcis clavier qui permettent d'interrompre et reprendre
 > le défilement à l'écran sont « **CTRL + S** » pour interrompre le
 > défilement d'un fichier trop volumineux et « **CTRL + Q **» pour
 > reprendre le défilement.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image26.png){width="6.3in"
-> height="4.132638888888889in"}15 -- Je me suis servi de la commande
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image26.png)15 -- Je me suis servi de la commande
 > « **head -5 /var/log/syslog** » pour afficher les 5 premières lignes,
 > « **tail -15 /var/log/syslog** » pour afficher les 15 dernières lignes
 > et enfin un mélange des deux pour afficher les lignes de 10 à 20,
 > « **tail -0 /var/log/syslog \| head -20 /var/log/syslog** ».
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image27.png){width="4.813171478565179in"
-> height="0.3646347331583552in"}16 -- La commande « **dmesg \|less** »
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image27.png)16 -- La commande « **dmesg \|less** »
 > permet d'afficher le contenu du buffer du noyau, je n'ai cependant pas
 > la permission de voir son contenu. L'option less permet d'afficher
 > page par page.
@@ -184,8 +156,7 @@ height="0.28680555555555554in"}
 > commande « man passwd » permet d'accéder à la page de manuel de ce
 > fichier
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image28.png){width="4.773670166229222in"
-> height="3.7291666666666665in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image28.png)
 >
 > 18 -- Voici la commande qui permet d'afficher seulement la première
 > colonne triée par ordre alphabétique inverse. Je me suis servis de la
@@ -194,24 +165,20 @@ height="0.28680555555555554in"}
 > première colonne uniquement et le « **sort --r** » pour trier dans
 > l'ordre alphabétique inverse.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image29.png){width="4.141666666666667in"
-> height="4.134722222222222in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image29.png)
 >
 > 19 -- La commande qui nous donne le nombre d'utilisateurs ayant un
 > compte sur cette machine est « **compgen --u** ».
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image30.png){width="3.0104166666666665in"
-> height="0.3958333333333333in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image30.png)
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image31.png){width="1.858274278215223in"
-> height="4.395833333333333in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image31.png)
 >
 > 20 -- Grâce à la commande « **man --k conversion \| wc --l** » j'ai pu
 > obtenir le nombre de pages de manuel comportant le mot clé conversion
 > dans leur description.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image32.png){width="3.6775962379702536in"
-> height="0.3750524934383202in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image32.png)
 >
 > 21 -- Pour trouver tous les fichiers se nommant **passwd** présent sur
 > la machine j'utilise la commande « **find / -name 'passwd'** ».
@@ -229,21 +196,18 @@ height="0.28680555555555554in"}
 > 24 -- Voici l'utilisation de la commande « **locate** » pour trouver
 > le fichier qui se nomme **history.log**.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image33.png){width="3.09375in"
-> height="0.3854166666666667in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image33.png)
 >
 > 25 -- J'ai commencé par créer un fichier dans mon dossier personnel
 > puis j'ai utilisé **locate** pour le trouver. Il n'apparaît pas car je
 > suis dans ce fichier et donc à l'endroit du fichier.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image34.png){width="3.75in"
-> height="0.5625in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image34.png)
 
 Remarque : La commande « **rm** » ne marche pas avec des tuyaux (\|) (en
 entrée standard). Il faut donc se servir de la commande xarg.
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image35.png){width="6.208333333333333in"
-height="3.0833333333333335in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image35.png)
 
 **[Exercice 3. Découverte de l'éditeur de texte nano]{.ul}**
 
@@ -251,8 +215,7 @@ height="3.0833333333333335in"}
 sous le nom de log.txt j'ai utilisé la commande « **cp /var/log/syslog
 log.txt** » puis « **nano log.txt** »
 
-![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image36.png){width="6.3in"
-height="0.6951388888888889in"}
+![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image36.png)
 
 2 -- J'ai ensuite utilisé le Ctrl + W puis Ctrl + R pour trouver le mot
 à remplacer. J'ai ensuite renseigné le mot à remplacer et le mot qui le
@@ -275,13 +238,11 @@ et j'ai appuyé sur la touche Y.
 > 2 -- J'ai décommenté la ligne « **force_color_prompt=yes** » puis
 > enregistrer et quittez le fichier nano.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image37.png){width="1.8854166666666667in"
-> height="0.22916666666666666in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image37.png)
 >
 > 3 -- Voilà le résultat après l'exécution de la commande « source
 > .bashrc », la couleur de l'invite de commande à bien changer.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image38.png){width="2.7395833333333335in"
-> height="0.3958333333333333in"}
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image38.png)
 >
 > 4 -
