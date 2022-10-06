@@ -69,7 +69,8 @@ récursifs (qui se trouve à la suite du chemin).
 
 ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image12.png)
 
-2.  ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image13.png)On peut donc en déduire que les
+2.  ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image13.png)
+    On peut donc en déduire que les
     fichiers commençant par un point sont des fichiers cachés.
 
 3.  Le programme ls se situe dans « **/usr/bin/ls** ».
@@ -91,9 +92,10 @@ récursifs (qui se trouve à la suite du chemin).
 
 ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image16.png)
 
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image17.png)6 -- La commande « **ls ..** » permet
-> de visualiser ce qui se trouve dans le dossier qui se trouve un cran
-> en arrière (si /home/usr alors /home).
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image17.png)
+> 6 -- La commande « **ls ..** » permet de visualiser ce qui se trouve
+> dans le dossier qui se trouve un
+> cran en arrière (si /home/usr alors /home).
 >
 > 7 -- La commande qui donne le chemin complet du dossier courant est
 > « **pwd** » (Path Work Directory).
@@ -106,7 +108,8 @@ récursifs (qui se trouve à la suite du chemin).
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image19.png)
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image20.png)9 -- La commande « **echo 'bip' \>\>
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image20.png)
+> 9 -- La commande « **echo 'bip' \>\>
 > plop** » exécutée deux fois va cette fois ci écrire un deuxième bip à
 > la suite du premier du fait de l'apparition d'un deuxième chevron.
 >
@@ -116,7 +119,8 @@ récursifs (qui se trouve à la suite du chemin).
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image21.png)
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image22.png)11 -- La commande file sert à déterminer
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image22.png)
+> 11 -- La commande file sert à déterminer
 > le type d'un fichier.
 >
 > 12 -- On constate que si l'on modifie le contenue du fichier
@@ -140,13 +144,15 @@ récursifs (qui se trouve à la suite du chemin).
 > défilement d'un fichier trop volumineux et « **CTRL + Q **» pour
 > reprendre le défilement.
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image26.png)15 -- Je me suis servi de la commande
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image26.png)
+> 15 -- Je me suis servi de la commande
 > « **head -5 /var/log/syslog** » pour afficher les 5 premières lignes,
 > « **tail -15 /var/log/syslog** » pour afficher les 15 dernières lignes
 > et enfin un mélange des deux pour afficher les lignes de 10 à 20,
 > « **tail -0 /var/log/syslog \| head -20 /var/log/syslog** ».
 >
-> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image27.png)16 -- La commande « **dmesg \|less** »
+> ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image27.png)
+> 16 -- La commande « **dmesg \|less** »
 > permet d'afficher le contenu du buffer du noyau, je n'ai cependant pas
 > la permission de voir son contenu. L'option less permet d'afficher
 > page par page.
