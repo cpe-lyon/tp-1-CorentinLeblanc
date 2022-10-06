@@ -1,6 +1,6 @@
-**[Compte rendu TP n°1 : Prise en main de Shell]**
+**Compte rendu TP n°1 : Prise en main de Shell**
 
-**[Manuel :]**
+**<ins>Manuel :</ins>**
 
 1 -- Le rôle de la commande « **which** » est de localiser une commande.
 
@@ -14,7 +14,7 @@ la capture d'écran ci-dessous.
 
 ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image1.png)
 
-**[Navigation dans l'arborescence des fichiers :]**
+**<ins>Navigation dans l'arborescence des fichiers :</ins>**
 
 Ci-dessous on retrouvera les différentes étapes à réaliser dans le TP.
 
@@ -60,7 +60,7 @@ Voici comment supprimer en une seule commande Dossier2 et son contenu.
 Le paramètre « **-R** » est ici pour supprimer les fichiers/dossiers
 récursifs (qui se trouve à la suite du chemin).
 
-**[Commandes importantes :]**
+**<ins>Commandes importantes :</ins>**
 1 -- La commande « **date** » permet d'afficher l'heure. La commande
 « **time** » permet de voir le temps réel, le temps de l'utilisateur
 et le temps du système. Les deux dernières données peuvent être
@@ -214,7 +214,7 @@ entrée standard). Il faut donc se servir de la commande xarg.
 
 ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image35.png)
 
-**[Exercice 3. Découverte de l'éditeur de texte nano]**
+**<ins>Exercice 3. Découverte de l'éditeur de texte nano</ins>**
 
 1 -- Pour copier le fichier /var/log/syslog dans mon dossier personnel
 sous le nom de log.txt j'ai utilisé la commande « **cp /var/log/syslog
@@ -235,7 +235,7 @@ fin du fichier puis fait Ctrl + U pour coller le résultat.
 5 -- Pour quitter puis enregistrer le fichier, j'ai utilisé le Ctrl + X
 et j'ai appuyé sur la touche Y.
 
-**[Exercice 4. Personnalisation du shell]**
+**<ins>Exercice 4. Personnalisation du shell</ins>**
 
 > 1 -- J'ai créé une copie de ce fichier grâce à la commande « **cp
 > \~/.bashrc .bashrc_bak** »
