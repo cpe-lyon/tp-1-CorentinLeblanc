@@ -61,19 +61,18 @@ Le paramètre « **-R** » est ici pour supprimer les fichiers/dossiers
 récursifs (qui se trouve à la suite du chemin).
 
 **[Commandes importantes :]**
-
-1.  La commande « **date** » permet d'afficher l'heure. La commande
-    « **time** » permet de voir le temps réel, le temps de l'utilisateur
-    et le temps du système. Les deux dernières données peuvent être
-    modifié alors que le temps réel ne peut être modifié.
+1 -- La commande « **date** » permet d'afficher l'heure. La commande
+« **time** » permet de voir le temps réel, le temps de l'utilisateur
+et le temps du système. Les deux dernières données peuvent être
+modifié alors que le temps réel ne peut être modifié.
 
 ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image12.png)
 
-2.  ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image13.png)
-    On peut donc en déduire que les
-    fichiers commençant par un point sont des fichiers cachés.
+2 --![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image13.png)
+On peut donc en déduire que les
+fichiers commençant par un point sont des fichiers cachés.
 
-3.  Le programme ls se situe dans « **/usr/bin/ls** ».
+3 -- Le programme ls se situe dans « **/usr/bin/ls** ».
 
 ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image14.png)
 
