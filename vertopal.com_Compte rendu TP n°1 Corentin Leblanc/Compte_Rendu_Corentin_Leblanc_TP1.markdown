@@ -5,12 +5,12 @@
 1 -- Le rôle de la commande « **which** » est de localiser une commande.
 
 2 -- Lors de la consultation d'une page du manuel, on peut rechercher un
-terme grâce à la commande « **man which --k mot_cherché** ».
+terme grâce à la commande « **man which --k mot_cherché** » ou en se servant de "**/option**".
 
 3 -- On peut quitter le manuel en appuyant sur la touche « **q** ».
 
 4 -- Cette section parle de « Jeu » comme on peut le constater grâce à
-la capture d'écran ci-dessous.
+la capture d'écran ci-dessous(man 6 intro).
 
 ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image1.png)
 
@@ -34,20 +34,20 @@ Nous n'avons pas la permissions d'accéder à ce dossier.
 
 La commande « **sudo cd /root** » n'est pas reconnue. C'est une commande
 intégrée du shell, elle ne peut pas être directement exécutée. Rien ne
-peut être inscrit devant « **cd** ».
+peut être inscrit devant « **cd** ». La commande "**sudo**" ne s'applique pas aux primitives du Shell.
 
 ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image8.png)
+
 A partir du dossier personnel, j'ai donc créée l'arborescence demandée.
 Je me suis servis des commande « **mkdir nomdudossier** » pour les
 dossiers et « **touch nomdufichier** » pour les fichiers.
 
 ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image9.png)
 
-Je ne peux pas supprimer « **Fichier1** » car je ne suis pas dans le
-dossier qui contient ce fichier.
+Je ne peux pas supprimer « **Fichier1** » car c'est un dossier.
 
 La commande qui permet de supprimer un dossier se nomme « **rmdir
-nomdufichier** », il faut par contre que le dossier soit vide.
+nomdufichier** », il faut par contre que le dossier soit vide ou "**rm -r**" si le dossier n'est pas vide.
 
 ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image10.png)
 
@@ -58,7 +58,7 @@ car c'est un répertoire.
 
 Voici comment supprimer en une seule commande Dossier2 et son contenu.
 Le paramètre « **-R** » est ici pour supprimer les fichiers/dossiers
-récursifs (qui se trouve à la suite du chemin).
+récursifs (qui se trouve à la suite du chemin). La commande "**rm -rf Dossier2**" est également valable.
 
 **<ins>Commandes importantes :</ins>**
 1 -- La commande « **date** » permet d'afficher l'heure. La commande
@@ -80,7 +80,7 @@ fichiers commençant par un point sont des fichiers cachés.
 > d'entrée de manuel pour cette commande. La commande « alias ll » m'a
 > permis d'en savoir plus sur la nature de celle-ci, on constate que
 > c'est un dérivé de la commande « **ls** » mais avec des options
-> supplémentaires.
+> supplémentaires. C'est un alias ou un raccourci pour la commande "**ls -alF**"
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image15.png)
 >
@@ -92,9 +92,9 @@ fichiers commençant par un point sont des fichiers cachés.
 ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image16.png)
 
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image17.png)
+> 
 > 6 -- La commande « **ls ..** » permet de visualiser ce qui se trouve
-> dans le dossier qui se trouve un
-> cran en arrière (si /home/usr alors /home).
+> dans le dossier qui se trouve un cran en arrière(le dossier parent).
 >
 > 7 -- La commande qui donne le chemin complet du dossier courant est
 > « **pwd** » (Path Work Directory).
@@ -103,7 +103,7 @@ fichiers commençant par un point sont des fichiers cachés.
 >
 > 8 -- La commande « **echo 'bip' \> plop** » exécutée deux fois va
 > écrire bip une première fois dans un fichier nommé « **plop** » puis
-> va écraser le dernier bip et en écrire un deuxième.
+> va écraser le dernier bip et l'écrire à nouveau, il n'y aura donc qu'un bip dans le fichier.
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image19.png)
 >
@@ -114,18 +114,17 @@ fichiers commençant par un point sont des fichiers cachés.
 >
 > 10 -- La commande « **sleep 10 \| echo 'toto'** » affiche dans un
 > premier temps le toto puis ensuite attend 10 secondes avant de nous
-> rendre la main.
+> rendre la main, le pipe n'attend donc pas la fin de la première commande pour commencer à traiter la deuxième.
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image21.png)
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image22.png)
-> 11 -- La commande file sert à déterminer
-> le type d'un fichier.
+> 11 -- La commande file sert à déterminer le type d'un fichier.
 >
 > 12 -- On constate que si l'on modifie le contenue du fichier
 > **original** alors le contenue du fichier **lien_phy** va lui aussi
 > changer. Le fichier **lien_phy** existe toujours même si on supprime
-> le fichier **original**.
+> le fichier **original**. Ainsi lien_phy permet encore d'accéder au fichier car c'est un lien physique
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image23.png)
 >
@@ -134,7 +133,7 @@ fichiers commençant par un point sont des fichiers cachés.
 > 13 -- Après modification du contenu du fichier **lien_phy**, la
 > modification se fait également sur le fichier **lien_sym**. Après
 > suppression du fichier **lien_phy**, le fichier **lien_sym** n'est
-> plus accessible comme en témoigne la capture d'écran ci-dessous.
+> plus accessible comme en témoigne la capture d'écran ci-dessous car c'est un lien symbolique.
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image25.png)
 >
@@ -144,22 +143,25 @@ fichiers commençant par un point sont des fichiers cachés.
 > reprendre le défilement.
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image26.png)
+> 
 > 15 -- Je me suis servi de la commande
 > « **head -5 /var/log/syslog** » pour afficher les 5 premières lignes,
 > « **tail -15 /var/log/syslog** » pour afficher les 15 dernières lignes
 > et enfin un mélange des deux pour afficher les lignes de 10 à 20,
-> « **tail -0 /var/log/syslog \| head -20 /var/log/syslog** ».
+> « **tail -0 /var/log/syslog \| head -20 /var/log/syslog** »
+> ou encore "**head -20 /var/log/syslog | tail -11**".
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image27.png)
+> 
 > 16 -- La commande « **dmesg \|less** »
-> permet d'afficher le contenu du buffer du noyau, je n'ai cependant pas
+> permet d'afficher le contenu du buffer(message) du noyau, je n'ai cependant pas
 > la permission de voir son contenu. L'option less permet d'afficher
 > page par page.
 >
 > 17 -- Le fichier **/etc/passwd** contient les noms d'utilisateurs, les
 > mots de passes cryptés et le numéro d'identification d'utilisateur. La
 > commande « man passwd » permet d'accéder à la page de manuel de ce
-> fichier
+> fichier, plus précisémentà la section 5("**man 5 passwd**").
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image28.png)
 >
@@ -168,12 +170,13 @@ fichiers commençant par un point sont des fichiers cachés.
 > commande awk avec notamment comme paramètre le « **-F:** », les deux
 > points délimitant les colonnes. Le « **\$1** » est pour afficher la
 > première colonne uniquement et le « **sort --r** » pour trier dans
-> l'ordre alphabétique inverse.
+> l'ordre alphabétique inverse. Autre solution avec la commande "**cut -d: -f1 /etc/passwd | sort -r**".
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image29.png)
 >
 > 19 -- La commande qui nous donne le nombre d'utilisateurs ayant un
-> compte sur cette machine est « **compgen --u** ».
+> compte sur cette machine est « **compgen --u** ». Autre solution avec la commande "**wc -l /etc/passwd**"
+> qui va compter le nombre de lignes du fichier /etc/passwd et donc le nombre de users)
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image30.png)
 >
@@ -193,10 +196,11 @@ fichiers commençant par un point sont des fichiers cachés.
 > commande « **find / -name \'passwd\' 2\>&1
 > \~/list_passwd_files.txt** » et pour rediriger les erreurs dans un
 > fichier spécial **/dev/null** j'ai utilisé la commande « **find /
-> -name \'passwd\'2\> /dev/null** ».
+> -name \'passwd\'2\> /dev/null** ». Autre solution avec la commande 
+> "**find / -name passwd 1> ~/list_passwd_files.txt 2> /dev/null**".
 >
 > 23 -- Pour chercher ou est défini l'alias ll vu précédemment, j'ai
-> utilisé la commande « **grep --r ls --alF \*** ».
+> utilisé la commande « **grep --r ls --alF \*** » ou encore "**grep -r "alias ll"**".
 >
 > 24 -- Voici l'utilisation de la commande « **locate** » pour trouver
 > le fichier qui se nomme **history.log**.
@@ -204,8 +208,8 @@ fichiers commençant par un point sont des fichiers cachés.
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image33.png)
 >
 > 25 -- J'ai commencé par créer un fichier dans mon dossier personnel
-> puis j'ai utilisé **locate** pour le trouver. Il n'apparaît pas car je
-> suis dans ce fichier et donc à l'endroit du fichier.
+> puis j'ai utilisé **locate** pour le trouver. Il n'apparaît pas car il n'est pas encore indexé dans la base 
+> de données. L'indexation peut être forcé avec la commande "**updatedb**".
 >
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image34.png)
 
