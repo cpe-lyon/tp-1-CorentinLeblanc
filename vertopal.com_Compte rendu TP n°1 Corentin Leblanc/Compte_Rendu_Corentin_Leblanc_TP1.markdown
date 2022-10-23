@@ -255,3 +255,11 @@ et j'ai appuyé sur la touche Y.
 > ![](vertopal_b96c91bea8414a4097a9c39cc1082c93/media/image38.png)
 >
 > 4 -
+
+
+
+Correction Annales:
+
+![image](https://user-images.githubusercontent.com/104362418/197400383-16c13a9a-9fdd-4ba2-9a8d-58c00d35e0a3.png)
+
+"**Unzip < copies.zip 2>> /var/log/syslog | analyse 2> erreurs.analyse.log | correction 2> erreurs_correction.log | tee notes.csv | moyenne**"
